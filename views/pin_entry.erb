@@ -1,0 +1,9 @@
+<h1>SMS Phone Number Verification: Step 2</h1>
+<h2 style="color: #ff0000"><%= params['msg'] %></h2>
+<h3>A text message has been sent to <%= params['number'] %> with a four digit 
+PIN.  When you receive the text message, please enter the PIN below.</h3>
+<form action="/verify" method="post">
+    <input type="text" name="entry" />
+    <input type="hidden" name="pin" value="<%= @pin_md5 %>" />
+    <input type="submit" value="Submit">
+</form>

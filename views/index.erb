@@ -1,0 +1,8 @@
+<h1>SMS Phone Number Verification: Step 1</h1>
+<h2 style="color: #ff0000"><%= params['msg'] %></h2>
+<h3>Enter your phone number to receive an SMS message with a PIN number you 
+will need to enter on the next screen</h3>
+<form action="/pin_entry" method="post">
+    <input type="text" name="number" />
+    <input type="submit" value="Text me!">
+</form>

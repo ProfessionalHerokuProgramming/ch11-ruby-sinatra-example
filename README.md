@@ -1,0 +1,1 @@
+The example application from the "Creating a Sample Application with the Sinatra Framework" section of Chapter 11, "Developing with Ruby".
